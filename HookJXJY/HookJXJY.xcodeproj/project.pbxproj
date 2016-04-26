@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9DA530D1CCF3E3E004582F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DA530C1CCF3E3E004582F1 /* Foundation.framework */; };
+		C9DA531D1CCF3E3E004582F1 /* HookJXJY.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9DA531C1CCF3E3E004582F1 /* HookJXJY.mm */; };
+		C9DA53271CCF444C004582F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DA53261CCF444C004582F1 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9DA53091CCF3E3E004582F1 /* HookJXJY.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = HookJXJY.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DA530C1CCF3E3E004582F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9DA53111CCF3E3E004582F1 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C9DA53121CCF3E3E004582F1 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C9DA53141CCF3E3E004582F1 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C9DA53181CCF3E3E004582F1 /* HookJXJY.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = HookJXJY.plist; path = Package/Library/PreferenceLoader/Preferences/HookJXJY.plist; sourceTree = "<group>"; };
+		C9DA53191CCF3E3E004582F1 /* HookJXJYIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HookJXJYIcon.png; path = Package/Library/PreferenceLoader/Preferences/HookJXJYIcon.png; sourceTree = "<group>"; };
+		C9DA531A1CCF3E3E004582F1 /* HookJXJYIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HookJXJYIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/HookJXJYIcon@2x.png"; sourceTree = "<group>"; };
+		C9DA531B1CCF3E3E004582F1 /* HookJXJY-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HookJXJY-Prefix.pch"; sourceTree = "<group>"; };
+		C9DA531C1CCF3E3E004582F1 /* HookJXJY.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HookJXJY.mm; sourceTree = "<group>"; };
+		C9DA53201CCF3E3E004582F1 /* HookJXJY.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = HookJXJY.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/HookJXJY.plist; sourceTree = "<group>"; };
+		C9DA53261CCF444C004582F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9DA53051CCF3E3E004582F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DA53271CCF444C004582F1 /* UIKit.framework in Frameworks */,
+				C9DA530D1CCF3E3E004582F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9DA52FF1CCF3E3E004582F1 = {
+			isa = PBXGroup;
+			children = (
+				C9DA530E1CCF3E3E004582F1 /* HookJXJY */,
+				C9DA530B1CCF3E3E004582F1 /* Frameworks */,
+				C9DA530A1CCF3E3E004582F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9DA530A1CCF3E3E004582F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53091CCF3E3E004582F1 /* HookJXJY.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9DA530B1CCF3E3E004582F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53261CCF444C004582F1 /* UIKit.framework */,
+				C9DA530C1CCF3E3E004582F1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9DA530E1CCF3E3E004582F1 /* HookJXJY */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA531C1CCF3E3E004582F1 /* HookJXJY.mm */,
+				C9DA530F1CCF3E3E004582F1 /* Package */,
+				C9DA53131CCF3E3E004582F1 /* Supporting Files */,
+			);
+			path = HookJXJY;
+			sourceTree = "<group>";
+		};
+		C9DA530F1CCF3E3E004582F1 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53101CCF3E3E004582F1 /* DEBIAN */,
+				C9DA53151CCF3E3E004582F1 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C9DA53101CCF3E3E004582F1 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53111CCF3E3E004582F1 /* control.txt */,
+				C9DA53121CCF3E3E004582F1 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C9DA53131CCF3E3E004582F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53141CCF3E3E004582F1 /* PackageVersion.plist */,
+				C9DA531B1CCF3E3E004582F1 /* HookJXJY-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9DA53151CCF3E3E004582F1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53161CCF3E3E004582F1 /* PreferenceLoader */,
+				C9DA531E1CCF3E3E004582F1 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C9DA53161CCF3E3E004582F1 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53171CCF3E3E004582F1 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		C9DA53171CCF3E3E004582F1 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53181CCF3E3E004582F1 /* HookJXJY.plist */,
+				C9DA53191CCF3E3E004582F1 /* HookJXJYIcon.png */,
+				C9DA531A1CCF3E3E004582F1 /* HookJXJYIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		C9DA531E1CCF3E3E004582F1 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA531F1CCF3E3E004582F1 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		C9DA531F1CCF3E3E004582F1 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA53201CCF3E3E004582F1 /* HookJXJY.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9DA53061CCF3E3E004582F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9DA53081CCF3E3E004582F1 /* HookJXJY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DA53231CCF3E3E004582F1 /* Build configuration list for PBXNativeTarget "HookJXJY" */;
+			buildPhases = (
+				C9DA53041CCF3E3E004582F1 /* Sources */,
+				C9DA53051CCF3E3E004582F1 /* Frameworks */,
+				C9DA53061CCF3E3E004582F1 /* Headers */,
+				C9DA53071CCF3E3E004582F1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HookJXJY;
+			productName = HookJXJY;
+			productReference = C9DA53091CCF3E3E004582F1 /* HookJXJY.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9DA53001CCF3E3E004582F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					C9DA53081CCF3E3E004582F1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C9DA53031CCF3E3E004582F1 /* Build configuration list for PBXProject "HookJXJY" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9DA52FF1CCF3E3E004582F1;
+			productRefGroup = C9DA530A1CCF3E3E004582F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9DA53081CCF3E3E004582F1 /* HookJXJY */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9DA53071CCF3E3E004582F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9DA53041CCF3E3E004582F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DA531D1CCF3E3E004582F1 /* HookJXJY.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9DA53211CCF3E3E004582F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C9DA53221CCF3E3E004582F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C9DA53241CCF3E3E004582F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: yca8939@163.com (LU3G3B4XSA)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HookJXJY/HookJXJY-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 172.20.42.59;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C9DA53251CCF3E3E004582F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: yca8939@163.com (LU3G3B4XSA)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HookJXJY/HookJXJY-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 172.20.42.59;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9DA53031CCF3E3E004582F1 /* Build configuration list for PBXProject "HookJXJY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DA53211CCF3E3E004582F1 /* Debug */,
+				C9DA53221CCF3E3E004582F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9DA53231CCF3E3E004582F1 /* Build configuration list for PBXNativeTarget "HookJXJY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DA53241CCF3E3E004582F1 /* Debug */,
+				C9DA53251CCF3E3E004582F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9DA53001CCF3E3E004582F1 /* Project object */;
+}

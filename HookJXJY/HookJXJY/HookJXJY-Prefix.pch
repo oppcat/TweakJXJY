@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'HookJXJY' target in the 'HookJXJY' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
