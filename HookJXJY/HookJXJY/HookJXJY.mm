@@ -59,10 +59,6 @@ CHOptimizedMethod1(self, void, VitamoPlayerView, movieFinished, id, arg){
 static void WillEnterForeground(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo)
 {
 	// not required; for example only
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hello" message:@"applicationWillEnterForeground" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    
-    [alert show];
-    [alert release];
 }
 
 static void ExternallyPostedNotification(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo)
