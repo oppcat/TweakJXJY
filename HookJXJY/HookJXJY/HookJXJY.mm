@@ -51,7 +51,7 @@ CHDeclareClass(VitamoPlayerView); // declare class
 CHOptimizedMethod1(self, void, VitamoPlayerView, movieFinished, id, arg){
     CHSuper1(VitamoPlayerView, movieFinished,arg); // call old (original) method
     id control = [(UIView*)self performSelector:@selector(controlV)];
-    [control performSelector:@selector(seekForwardPressed:) withObject:nil afterDelay:1];
+    [control performSelector:@selector(seekBackwardPressed:) withObject:nil afterDelay:1];
 }
 
 
